@@ -1,23 +1,209 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
+  <title>Breadventure</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="description" content="">
+  <meta name="description" content="Le site web du jeu Breadventure">
   <!-- Meta Partage -->
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
 
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
+   
+  <header>
 
-  <img src="assets/images/logo-heaj.png">
-  <h1>Hello world</h1>
+    <nav class="navbar">
+      <a href="index.html" class="logo">S.T</a>
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar-list">
+        <ul class="navbar-links">
+          <li><a href="#but">QUEL BUT ?</a></li>
+          <li><a href="#creation">LA RAISON DE LA CREATION</a></li>
+          <li><a href="#personnages">LES PERSONNAGES</a></li> 
+          <li><a href="#items">LES ITEMS</a></li>
+          <li><a href="#boutiques">LES BOUTIQUES</a></li>
+          <li><a href="#studio">LE STUDIO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="intro-screen">
+
+    <div>
+      <img src="assets/images/Plane.png" alt="Image d'un avion en pixel art">
+    </div>
+
+    <div class="main-title-container">
+      <img src="assets/images/Breadventure title V2.png" alt="Logo de Breadventure" class="main-title fade-in-up">
+    </div>
+
+    <div class="town-background">
+      <img src="assets/images/" alt="Image de la ville en arrière-plan">
+    </div>
+
+    <div class="town-front">
+      <img src="assets/images/" alt="Image de la ville en avant-plan">
+    </div>
+
+  </section>
+
+  <section class="but" id="but">
+
+    <div class="but-container fade-in-up">
+      <div class="but-title_first fade-in-up">
+        <h2>QUEL BUT ?</h2>
+      </div>
+
+      <div class="but-title_second fade-in-up">
+        <h3>Aller chercher le pain, toute une aventure...</h3>
+      </div>
+
+      <div class="but-text fade-in-up">
+        <p>Breadventure, un jeu qui vous met dans la peau d’une personne portant des lunettes. Vous allez découvrir les défis du quotidien (dont aller chercher le pain). Préparez-vous à devoir à devoir nettoyer régulièrement vos lunettes... </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="creation-raison" id="creation">
+    <img src="assets/images/" alt="Une photo dand le cadre du projet iLab" class="creation-raison-image fade-in-up">
+
+    <div class="creation-raison-container fade-in-up">
+    <div class="creation-raison-title fade-in-up">
+      <h2>LA RAISON DE LA CREATION</h2>
+    </div>
+
+    <div class="creation-raison-text fade-in-up">
+      <p>Dans le cadre du projet iLab, qui est de créer un jeu vidéo sur un handicap, nous avons décidé d’aborder le sujet de la malvoyance, plus spécifiquement sur le port des lunettes.</p>
+    </div>
+    </div>
+
+  </section>
+ 
+
+
+  <section class="personnages" id="personnages">
+
+    <div class="personnages-container fade-in-up">
+      <div class="personnages-title_first fade-in-up">
+        <h2>LES PERSONNAGES</h2>
+      </div>
+
+      <div class="personnages-title_second fade-in-up">
+        <h3>Faites votre choix dès maintenant !</h3>
+      </div>
+
+      <img src="assets/images/" alt="Image des personnages du jeu" class="personnages-image fade-in-up">
+
+      <div class="personnages-text fade-in-up">
+        <p>Vous avez sans doute déjà rencontré un Henri ou une Juliette durant votre vie. Des personnes lambda, portant des lunettes allant chercher le pain. Préparez vous à entrer dans le monde merveilleux (mais vite ennuyant) des gens qui ne voient rien quand leurs lunettes sont sales.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="items" id="items">
+
+    <div class="items-container fade-in-up">
+      <div class="items-title fade-in-up">
+        <h2>LES ITEMS</h2>
+      </div>
+
+      <div class="items-text fade-in-up">
+        <p>Voici les items que vous allez devoir utiliser tout au long de votre trajet jusqu’à la boulangerie.</p>
+      </div>
+
+      <img src="assets/images/animation-de-pieces-de-pixel-art-jeu-ui-golden-coins-rotation-etapes-jeu-de-pixels-argent-images-animees-illustration-vectorielle-animation-pieces-8-bits-or-2fn0pm7-1.png.png" alt="Image de l'item pièce" class="items-image fade-in-up">
+
+      <div class="items-text_piece fade-in-up">
+        <p>Les pièces vont vous permettre d’acheter des items dans les shops (et votre pain).</p>
+      </div>
+
+      <img src="assets/images/New Piskel-1.png (1).png" alt="Image de l'item parapluie" class="items-image fade-in-up">
+
+      <div class="items-text_piece fade-in-up">
+        <p>Le parapluie vous sera bien utile pour vous protéger de la pluie (logique).</p>
+      </div>
+
+      <img src="assets/images/200820_1030026-1.png (2).png" alt="Image de l'item mouchoir" class="items-image fade-in-up">
+
+      <div class="items-text_piece fade-in-up">
+        <p>Les mouchoirs vont vous permettre de nettoyer vos lunettes (attention à votre stock).</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="boutiques" id="boutiques">
+
+    <div class="boutiques-container fade-in-up">
+      <div class="boutiques-title fade-in-up">
+        <h2>LES BOUTIQUES</h2>
+      </div>
+
+      <div class="boutiques-text fade-in-up">
+        <p>Tout au long de votre parcours, vous allez trouver des batiments. Certains sont décoratifs, d’autres vous seront bien utiles.</p>
+      </div>
+
+      <img src="assets/images/Shop_devanture (1).png" alt="Image de l'item pièce" class="boutiques-image fade-in-up">
+
+      <div class="boutiques-text_shop fade-in-up">
+        <p>Le magasin vous permet de recharger vos items avec l’échange de pièces.</p>
+      </div>
+
+      <img src="assets/images/bakery.png" alt="Image de l'item parapluie" class="boutiques-image fade-in-up">
+
+      <div class="items-text_bakery fade-in-up">
+        <p>La boulangerie, le lieu d’arrivée de votre quête. Gardez un peu d’argent et ne traîner pas trop en chemin...</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="studio" id="studio">
+
+    <div class="studio-container fade-in-up">
+      <div class="studio-title fade-in-up">
+        <h2>LE STUDIO</h2>
+      </div>
+
+      <div class="studio-text fade-in-up">
+        <p>Evidemment, le projet Breadventure n’aurait pas vu le jour sans l’équipe de choc composé de Jarne, Théo, Nicolas, Sahan et Andréa. </p>
+      </div>
+
+      <img src="assets/images/" alt="Image de l'équipe qui a crée Breadventure" class="studio-image fade-in-up">
+
+    </div>
+
+  </section>
+  
+  
+
+    <footer class="footer">
+
+      <p class="footer-text-first">No worries, the bakery is not too far...</p>
+
+      <img src="assets/images/Breadventure title V2.png" alt="Logo de Breadventure" class="footer-logo">
+
+      <p class="footer-text-second">Breadventure Company © 2025 - 2026</p>
+
+    </footer>
 
 </body>
 </html>
