@@ -1,24 +1,25 @@
- "use strict";
+"use strict";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".navbar-toggle");
+  const menu = document.querySelector(".navbar-list");
+  const links = document.querySelectorAll(".navbar-links a");
+
+  toggle.addEventListener("click", function () {
+    toggle.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".navbar-toggle");
-    const menu = document.querySelector(".navbar-list");
-    const links = document.querySelectorAll(".navbar-links a");
-
-    toggle.addEventListener("click", function () {
-      toggle.classList.toggle("active");
-      menu.classList.toggle("active");
-    });
-
-
-    links.forEach(link => {
-      link.addEventListener("click", function () {
-        toggle.classList.remove("active");
-        menu.classList.remove("active");
-      });
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      toggle.classList.remove("active");
+      menu.classList.remove("active");
     });
   });
+});
 
 
 // Aidé de l'IA pour l'animarion de fade-in-up 
