@@ -5,6 +5,7 @@
 html, body {
     scroll-behavior: smooth;
     background-color: #2C3138;
+    line-height: 1.4;
 }
 
 .creation-raison, .personnages, .boutiques, .footer {
@@ -131,6 +132,37 @@ h3, p {
         font-size: 16px;
     }
 
+    .intro-screen {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
+    }
 
+    .img-plane, .img-town-background, .img-town-front {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .img-plane {
+        width: 55px;
+        z-index: 2;
+    }
+
+    .img-town-background {
+        height: 150px;
+    }
+
+    .logo-main-title{
+        width: 300px;
+        z-index: 4;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
 
 }
