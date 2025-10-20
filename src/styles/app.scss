@@ -225,6 +225,16 @@ h3, p {
     background-color: #2C3138;
     }
 
+    .boutiques-image,  .boutiques-image-two{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boutiques-image-two{
+        width: 300px;
+        height: auto;
+    }
+
     .footer-text-first{
         font-weight: 900;
     }
