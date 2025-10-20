@@ -22,8 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Aidé de l'IA pour l'animarion de fade-in-up 
-
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -61,3 +59,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const slides = document.querySelectorAll('.slider');
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
+const dots = document.querySelectorAll('.dot');
+
+let currentIndex = 0;
+
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('actif', i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('actif', i === index);
+  });
+}
+
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    currentIndex = i;
+    showSlide(currentIndex);
+  });
+});
