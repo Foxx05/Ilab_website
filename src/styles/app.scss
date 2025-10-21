@@ -209,7 +209,9 @@ h3, p {
     .next { right: 10px; }
 
     .indicateurs-slider {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;  
     }
 
     .dot {
@@ -226,16 +228,16 @@ h3, p {
     background-color: #2C3138;
     }
 
-    .boutiques-image,  .boutiques-image-two{
-        align-items: center;
-        justify-content: center;
+    .boutiques-image{
+        width: 75%;
     }
-
-    .boutiques-image-two{
-        width: 300px;
-        height: auto;
+    .boutiques-container{
+        display: grid;
+        justify-items: center;
     }
-
+    .boutiques-container p {
+        margin-bottom: 48px;
+    }
     .footer-text-first{
         font-weight: 900;
     }
