@@ -15,8 +15,6 @@ html, body {
 .items, .studio {
     background-color: #FBBB1E;
     color: #2C3138;
-    padding: 0;
-    margin: 0;
 }
 
 h2 {
@@ -46,6 +44,7 @@ h3, p {
         padding-top: 90px;
         padding-bottom: 45px;
     }
+    
 
     .navbar {
         display: flex;
@@ -58,7 +57,7 @@ h3, p {
     .navbar-toggle {
         display: flex;
         flex-direction: column;
-        position: static;
+        position: fixed;
         justify-content: space-between;
         width: 28px;
         height: 22px;
@@ -66,8 +65,8 @@ h3, p {
         border: none;
         cursor: pointer;
         padding: 0;
-        margin-right: 10px;
-        margin-left: auto;
+        top : 20px;
+        right: 20px;
         z-index: 1002;
     }
 
@@ -84,13 +83,13 @@ h3, p {
     }
 
     .navbar-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translateY(8px);
+        transform: rotate(45deg) translateY(13px);
         background: #FBBB1E;
         transform-origin: center;
     }
 
     .navbar-toggle.active span:nth-child(2) {
-        transform: rotate(-45deg) translateY(-8px);
+        transform: rotate(-45deg) translateY(-13px);
         background: #FBBB1E;
         transform-origin: center;
     }
@@ -99,8 +98,8 @@ h3, p {
         position: fixed;
         top: 0;
         right: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background-color: #2C3138;
         display: flex;
         flex-direction: column;
@@ -174,6 +173,11 @@ h3, p {
         top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .personnages-image{
+        width: 270px;
+        height: auto;
     }
     
     .items-image{
