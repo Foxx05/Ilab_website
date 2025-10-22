@@ -45,12 +45,7 @@ h3, p {
         padding-top: 90px;
         padding-bottom: 45px;
     }
-
-    .creation-raison{
-        padding-top: 180px;
-    }
     
-
     .navbar {
         display: flex;
         color: black;
@@ -64,7 +59,7 @@ h3, p {
         position: fixed;
         justify-content: space-between;
         width: 28px;
-        height: 22px;
+        height: 15px;
         background: none;
         border: none;
         cursor: pointer;
@@ -87,13 +82,13 @@ h3, p {
     }
 
     .navbar-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translateY(13px);
+        transform: rotate(45deg) translateY(8.5px);
         background: #FBBB1E;
         transform-origin: center;
     }
 
     .navbar-toggle.active span:nth-child(2) {
-        transform: rotate(-45deg) translateY(-13px);
+        transform: rotate(-45deg) translateY(-8.5px);
         background: #FBBB1E;
         transform-origin: center;
     }
@@ -179,6 +174,13 @@ h3, p {
         z-index: 3;
         position: absolute;
         object-fit: cover;
+        top: 7%;
+        animation: planeFly 13s linear infinite;
+    }
+
+    @keyframes planeFly {
+        from {right: -20%}
+        to {right: 140%}
     }
 
     .logo-main-title{
@@ -197,10 +199,17 @@ h3, p {
     }
 
     .but-container{
-       position: absolute;
-       margin-top: -200px;
+       margin-top: -160px;
+       margin-left: 0px;
+       margin-right: 0px;
        color: white;
        text-shadow: #2C3138 2px 2px 4px;
+       background: linear-gradient(rgba(44, 49, 56, 0.15) 0%, rgba(44, 49, 56, 0.55) 30%, rgba(44, 49, 56, 0.75) 50%, rgba(44, 49, 56, 0.95) 100%);
+    }
+
+    .but-title_first, .but-title_second, .but-text{
+        margin-left: 30px;
+        margin-right: 30px;
     }
        
     

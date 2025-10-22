@@ -1,6 +1,9 @@
 "use strict";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+//NAVBAR
 
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.querySelector(".navbar-toggle");
@@ -22,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// SCROLL TRIGGER
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+//SLIDER ITEM
 const slides = document.querySelectorAll('.slider');
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
