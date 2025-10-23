@@ -147,7 +147,7 @@ h3, p {
         height: 50vh;
         width: 100%;
         overflow: hidden;
-         background-color: #00CFFF;
+        background-color: #00CFFF;
     }
 
     .img-town-background{
@@ -204,7 +204,7 @@ h3, p {
        margin-right: 0px;
        color: white;
        text-shadow: #2C3138 2px 2px 4px;
-       background: linear-gradient(rgba(44, 49, 56, 0.15) 0%, rgba(44, 49, 56, 0.55) 30%, rgba(44, 49, 56, 0.75) 50%, rgba(44, 49, 56, 0.95) 100%);
+       background: linear-gradient(rgba(44, 49, 56, 0.15) 0%, rgba(44, 49, 56, 0.7) 30%, rgba(44, 49, 56, 0.9) 50%, rgba(44, 49, 56, 0.95) 100%);
     }
 
     .but-title_first, .but-title_second, .but-text{
@@ -332,10 +332,40 @@ h3, p {
     }
 }
 
-@media (min-width : 1280px){
+@media (min-width : 830px){
 
+     h2 {
+        font-size: 84px;
+        font-weight: 800;
+    }
 
+    h3, p {
+        font-size: 20px;
+    }
 
+    .img-town-background{
+        margin-top: -150px;
+    }
 
+    .logo-main-title{
+        width: 700px;
+    }
+
+    .img-plane{
+        width: 110px
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-list{
+    position: fixed;
+    width: 2.014rem;
+    height: auto;
+    top: 0rem;
+    right: 3.6rem;
+    pointer-events: none;
+    }
 
 }
