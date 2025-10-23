@@ -272,17 +272,25 @@ h3, p {
     text-align: center;
     }
 
+    
     .slider {
-    display: none;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     }
 
     .slider.actif {
-    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
     }
 
+
     .prev-button, .next-button {
-    position: flex;
-    top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
@@ -313,6 +321,14 @@ h3, p {
     background-color: #2C3138;
     }
 
+    .boutons-carousel{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+    }
+
+
     .boutiques-container{
         display: grid;
         justify-items: center;
@@ -336,6 +352,7 @@ h3, p {
     .studio-image{
         width: 370px;
         height: auto;
+        justify-items: center;
     }
 
     .footer-logo,
@@ -441,10 +458,33 @@ h3, p {
         width: 60%;
     }
 
+    
+    .creation-raison-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+    
+    .creation-raison-title, .creation-raison-text {
+        grid-column: 2;
+        grid-row: 1; 
+    }
+
+
+    
+    
+    .creation-raison-image{
+        width: 500px;
+    }
+
+
     .personnages-title_second h3{
         font-size: 36px;
     }
-    
+
     .carousel-items{
         display: flex;
         justify-content: space-between;   
@@ -468,10 +508,11 @@ h3, p {
     display: block;
     position: static;
     transform: none;
+    opacity: 1;
     }
 
-    .prev-button, .next-button, .indicateurs-slider {
-    display: block;
+    .boutons-carousel {
+    display: none;
     }
 
 
