@@ -44,7 +44,7 @@ gsap.set(ClassBut, { x:-1000});
     x:0,
     scrollTrigger: {
       trigger: ClassBut,
-      end: "top 200px",
+      end: "top 50%",
       scrub: true,
 
     }
@@ -57,7 +57,7 @@ gsap.set(ClassRaison, { x:500});
     x:0,
     scrollTrigger: {
       trigger: ClassRaison,
-      end: "top 200px",
+      end: "top 50%",
       scrub: true,
     }
   });
