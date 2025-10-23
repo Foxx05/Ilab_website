@@ -368,6 +368,50 @@ h3, p {
         font-size: 20px;
     }
 
+    .navbar-toggle {
+        width: 45px;
+        height: 25px;
+    }
+
+    .navbar-links a {
+        font-size: 63px;
+        color: #FBBB1E;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px; 
+        width: 0;
+        height: 3px;
+        background: #FBBB1E;
+        transition: width 0.3s ease; 
+    }
+
+    .navbar-links a:hover {
+        color: #FBBB1E 
+    }
+
+    .navbar-links a:hover::after {
+        width: 100%; 
+    }
+
+    .navbar-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(15px);
+        background: #FBBB1E;
+        transform-origin: center;
+    }
+
+    .navbar-toggle.active span:nth-child(2) {
+        transform: rotate(-45deg) translateY(-15px);
+        background: #FBBB1E;
+        transform-origin: center;
+    }
+
      .intro-screen {
         height: 80vh;
     }
