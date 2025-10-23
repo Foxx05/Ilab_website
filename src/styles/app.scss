@@ -145,7 +145,7 @@ h3, p {
 
     .intro-screen {
         position: relative;
-        height: 50vh;
+        height: 70vh;
         width: 100%;
         overflow: hidden;
         background-color: #00CFFF;
@@ -233,6 +233,17 @@ h3, p {
         height: auto;
         margin-bottom: 40px;
     }
+
+    .creation-raison-container{
+        display: grid;
+        justify-items: center;
+    }
+
+    .creation-raison-image{
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+    }
     
     .items-image{
         width: 250px;
@@ -301,9 +312,6 @@ h3, p {
     background-color: #2C3138;
     }
 
-    .boutiques-image{
-        width: 75%;
-    }
     .boutiques-container{
         display: grid;
         justify-items: center;
@@ -313,6 +321,20 @@ h3, p {
     }
     .footer-text-first{
         font-weight: 900;
+    }
+
+    .studio-container{
+        display: grid;
+        justify-items: center;
+    }
+
+    .studio-text p{
+        margin-bottom: 45px;
+    }
+
+    .studio-image{
+        width: 370px;
+        height: auto;
     }
 
     .footer-logo,
@@ -334,7 +356,7 @@ h3, p {
     }
 }
 
-@media (min-width : 830px){
+@media (min-width : 1280px){
 
      h2 {
         font-size: 84px;
@@ -346,11 +368,11 @@ h3, p {
     }
 
      .intro-screen {
-        height: 100vh;
+        height: 80vh;
     }
 
     .logo-main-title{
-        width: 700px;
+        width: 1000px;
     }
 
     .img-plane{
@@ -369,9 +391,32 @@ h3, p {
     .but-title_second{
         margin-bottom: 45px;
     }
+    
+    .but-text, .studio-text{
+        width: 60%;
+    }
 
     .personnages-title_second h3{
         font-size: 36px;
+    }
+    
+    .carousel-items{
+        display: flex;
+        justify-content: space-between;   
+        gap: 150px;
+    }
+
+    .items-image {
+        width: 250px;
+        height: auto;
+    }
+
+    .items-text{
+        margin-bottom: 84px;
+    }
+
+    .items-text_piece{
+        text-align: left;
     }
  
     .carousel-items .slider {
@@ -382,10 +427,6 @@ h3, p {
 
     .prev-button, .next-button, .indicateurs-slider {
     display: none;
-    }
-
-    .carousel-items{
-
     }
 
     .boutiques-container {
@@ -408,6 +449,14 @@ h3, p {
     .boutiques-image {
     width: 300px;
     height: auto;
+    }
+
+    .studio-image{
+        width: 1000px;
+    }
+
+    .footer-logo{
+        width: 1000px;
     }
 
 }
