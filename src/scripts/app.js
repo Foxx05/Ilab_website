@@ -2,6 +2,9 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import EmblaCarousel from 'embla-carousel';
+import { addPrevNextBtnsClickHandlers } from './test'
+
 
 //NAVBAR
 
@@ -26,42 +29,99 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // SCROLL TRIGGER
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".fade-in-up").forEach((el) => {
-    gsap.to(el, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%",
-        toggleActions: "play none none reverse"
-      }
-    });
+const ClassBut = gsap.utils.toArray('.fade-in-up__first');
+const ClassRaison = gsap.utils.toArray('.fade-in-up__second');
+const ClassPersonnage = gsap.utils.toArray('.fade-in-up__third');
+const ClassBoutique1 = gsap.utils.toArray('.fade-in-up__six');
+const ClassBoutique2 = gsap.utils.toArray('.fade-in-up__seven');
+const ClassStudio = gsap.utils.toArray('.fade-in-up__eight');
+
+ClassBut.forEach((ClassBut, index) => {
+gsap.set(ClassBut, { x:-1000});
+  gsap.to(ClassBut, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassBut,
+      end: "top 200px",
+      scrub: true,
+    }
+  });
+});
+
+ClassRaison.forEach((ClassRaison, index) => {
+gsap.set(ClassRaison, { x:500});
+  gsap.to(ClassRaison, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassRaison,
+      end: "top 200px",
+      scrub: true,
+    }
+  });
+});
+
+ClassPersonnage.forEach((ClassPersonnage, index) => {
+gsap.set(ClassPersonnage, { x:-500});
+  gsap.to(ClassPersonnage, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassPersonnage,
+      end: "top 55%",
+      scrub: true,
+    }
   });
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".fade-in-left").forEach((el) => {
-    gsap.to(el, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "left 85%",
-        toggleActions: "play none none reverse"
-      }
-    });
+gsap.set(".fade-in-up__five", { x:-400});
+gsap.to(".fade-in-up__five", {
+  x:0,
+  scrollTrigger: {
+    trigger: ".fade-in-up__five",
+    end: "top 200px",
+    scrub: true,
+  }
+});
+
+ClassBoutique1.forEach((ClassBoutique1, index) => {
+gsap.set(ClassBoutique1, { x:400});
+  gsap.to(ClassBoutique1, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassBoutique1,
+      end: "top 55%",
+      scrub: true,
+    }
   });
 });
+
+ClassBoutique2.forEach((ClassBoutique2, index) => {
+gsap.set(ClassBoutique2, { x:-400});
+  gsap.to(ClassBoutique2, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassBoutique2,
+      end: "top 55%",
+      scrub: true,
+    }
+  });
+});
+
+ClassStudio.forEach((ClassStudio, index) => {
+gsap.set(ClassStudio, { x:400});
+  gsap.to(ClassStudio, {
+    x:0,
+    scrollTrigger: {
+      trigger: ClassStudio,
+      end: "top 55%",
+      scrub: true,
+    }
+  });
+});
+
 
 
 //SLIDER ITEM
@@ -101,3 +161,25 @@ dots.forEach((dot, i) => {
     showSlide(currentIndex);
   });
 });
+
+//************************ */
+
+const OPTIONS = {}
+
+const emblaNode = document.querySelector('.items')
+const viewportNode = emblaNode.querySelector('.carousel-items')
+const prevBtnNode = emblaNode.querySelector('.prev-button')
+const nextBtnNode = emblaNode.querySelector('.next-button')
+
+
+const emblaApi = EmblaCarousel(viewportNode, OPTIONS)
+
+const removePrevNextBtnsClickHandlers = addPrevNextBtnsClickHandlers(
+  emblaApi,
+  prevBtnNode,
+  nextBtnNode
+)
+
+emblaApi.on('destroy', removePrevNextBtnsClickHandlers)
+
+
