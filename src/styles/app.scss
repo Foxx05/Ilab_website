@@ -220,7 +220,7 @@ h3, p {
         margin-bottom: 40px;
     }
 
-    .personnages-container{
+    .personnages-container, .personnages-container-second{
         display: grid;
         justify-items: center;
     }
@@ -483,6 +483,18 @@ h3, p {
 
     .personnages-title_second h3{
         font-size: 36px;
+    }
+
+    .personnages-container-second{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 80%;
+  }
+
+  .personnages-image{
+        width: 400px;
     }
 
     .carousel-items{
