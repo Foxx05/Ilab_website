@@ -3,7 +3,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import EmblaCarousel from 'embla-carousel';
-import { addPrevNextBtnsClickHandlers } from './test'
+// import { addPrevNextBtnsClickHandlers } from './embla-buttons';
 
 
 //NAVBAR
@@ -46,6 +46,7 @@ gsap.set(ClassBut, { x:-1000});
       trigger: ClassBut,
       end: "top 200px",
       scrub: true,
+
     }
   });
 });
@@ -163,23 +164,5 @@ dots.forEach((dot, i) => {
 });
 
 //************************ */
-
-const OPTIONS = {}
-
-const emblaNode = document.querySelector('.items')
-const viewportNode = emblaNode.querySelector('.carousel-items')
-const prevBtnNode = emblaNode.querySelector('.prev-button')
-const nextBtnNode = emblaNode.querySelector('.next-button')
-
-
-const emblaApi = EmblaCarousel(viewportNode, OPTIONS)
-
-const removePrevNextBtnsClickHandlers = addPrevNextBtnsClickHandlers(
-  emblaApi,
-  prevBtnNode,
-  nextBtnNode
-)
-
-emblaApi.on('destroy', removePrevNextBtnsClickHandlers)
 
 

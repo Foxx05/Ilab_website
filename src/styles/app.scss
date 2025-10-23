@@ -17,6 +17,7 @@ html, body {
 .items, .studio {
     background-color: #FBBB1E;
     color: #2C3138;
+    overflow: hidden;
 }
 
 h2 {
@@ -269,7 +270,7 @@ h3, p {
     }
 
     .prev-button, .next-button {
-    position: absolute;
+    position: flex;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -373,6 +374,7 @@ h3, p {
     .personnages-title_second h3{
         font-size: 36px;
     }
+
  
     .carousel-items .slider {
     display: block;
@@ -381,12 +383,9 @@ h3, p {
     }
 
     .prev-button, .next-button, .indicateurs-slider {
-    display: none;
+    display: block;
     }
 
-    .carousel-items{
-
-    }
 
     .boutiques-container {
     display: grid;
