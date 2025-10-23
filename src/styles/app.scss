@@ -344,29 +344,26 @@ h3, p {
         font-size: 20px;
     }
 
-    .img-town-background{
-        margin-top: -150px;
+     .intro-screen {
+        height: 110vh;
     }
 
     .logo-main-title{
         width: 700px;
+        margin-top: 30px;
     }
 
     .img-plane{
-        width: 110px
+        width: 110px;
+        margin-top: -40px;
     }
 
-    .navbar-toggle{
-        display: none;
+    .img-town-background{
+        margin-top: 80px;
     }
 
-    .navbar-list{
-    position: fixed;
-    width: 2.014rem;
-    height: auto;
-    top: 0rem;
-    right: 3.6rem;
-    pointer-events: none;
+    .img-town-front{
+        height: auto;
+        margin-top: 150px;
     }
-
 }
