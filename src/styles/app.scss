@@ -473,12 +473,16 @@ h3, p {
 
     
    .creation-raison-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 120px;
-  }
+        align-items: center;
+    }
+
+    .creation-raison-container .creation-raison-container-second{
+        grid-column: 2/3;
+    }
+
+    .creation-raison-container-second h2 {
+        margin-top: 0;
+    }
 
   .creation-raison-title,
   .creation-raison-text {
@@ -489,6 +493,8 @@ h3, p {
   .creation-raison-image {
     max-width: 450px; 
     flex-shrink: 0;
+    justify-self: end;
+    grid-column: 1/2;
   }
 
   .creation-raison-title {
