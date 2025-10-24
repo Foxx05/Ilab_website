@@ -20,7 +20,7 @@ html, body {
     overflow: hidden;
 }
 
-h2 {
+h2, .btnJeux {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
@@ -272,6 +272,7 @@ h3, p {
 
     .boutiques-text_shop{
         margin-bottom: 48px;
+        justify-self: start;
     }
 
     .items-container{
@@ -384,11 +385,31 @@ h3, p {
     .footer-text-second {
         font-size: 12px;
     }
+
+    .btnJeux {
+        font-size: 18px;
+        padding: 20px 50px;
+        margin-top: 23px;
+        border-radius: 5px;
+        background-color: #2C3138;
+        color: #FBBB1E;
+        border: 2px #2C3138 solid;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s;
+        font-weight: 800;
+    }
+
+    .btnJeux:hover {
+        background-color: #FBBB1E;
+        color: #2C3138;
+        border: 2px #2C3138 solid;
+    }
 }
 
 @media (min-width : 1280px){
 
-     h2 {
+    h2 {
         font-size: 84px;
         font-weight: 800;
     }
@@ -605,4 +626,8 @@ h3, p {
         width: 1000px;
     }
 
+    .btnJeux {
+        font-size: 26px;
+        padding: 20px 50px;
+    }
 }
