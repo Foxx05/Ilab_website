@@ -44,7 +44,7 @@ gsap.set(ClassBut, { x:-1000});
     x:0,
     scrollTrigger: {
       trigger: ClassBut,
-      end: "top 50%",
+      end: "top 75%",
       scrub: true,
 
     }
@@ -57,7 +57,7 @@ gsap.set(ClassRaison, { x:500});
     x:0,
     scrollTrigger: {
       trigger: ClassRaison,
-      end: "top 50%",
+      end: "top 75%",
       scrub: true,
     }
   });
@@ -69,7 +69,7 @@ gsap.set(ClassPersonnage, { x:-500});
     x:0,
     scrollTrigger: {
       trigger: ClassPersonnage,
-      end: "top 55%",
+      end: "top 75%",
       scrub: true,
     }
   });
@@ -93,7 +93,7 @@ gsap.set(ClassBoutique1, { x:400});
     x:0,
     scrollTrigger: {
       trigger: ClassBoutique1,
-      end: "top 55%",
+      end: "top 75%",
       scrub: true,
     }
   });
@@ -105,7 +105,7 @@ gsap.set(ClassBoutique2, { x:-400});
     x:0,
     scrollTrigger: {
       trigger: ClassBoutique2,
-      end: "top 55%",
+      end: "top 75%",
       scrub: true,
     }
   });
@@ -117,7 +117,7 @@ gsap.set(ClassStudio, { x:400});
     x:0,
     scrollTrigger: {
       trigger: ClassStudio,
-      end: "top 55%",
+      end: "top 75%",
       scrub: true,
     }
   });
