@@ -2,8 +2,6 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import EmblaCarousel from 'embla-carousel';
-// import { addPrevNextBtnsClickHandlers } from './embla-buttons';
 
 
 //NAVBAR
@@ -28,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// SCROLL TRIGGER
+//SCROLL TRIGGER
 gsap.registerPlugin(ScrollTrigger);
 
 const ClassBut = gsap.utils.toArray('.fade-in-up__first');
@@ -162,7 +160,3 @@ dots.forEach((dot, i) => {
     showSlide(currentIndex);
   });
 });
-
-//************************ */
-
-

@@ -195,19 +195,21 @@ h3, p {
         transform: translate(-50%, -50%);
     }
 
-    video{
-        width: 100%;
-        height: auto;
-        opacity: 0.8;
-    }
-
     .but-container{
+       position: relative;
        margin-top: -160px;
        margin-left: 0px;
        margin-right: 0px;
        color: white;
        text-shadow: #2C3138 2px 2px 4px;
-       background: linear-gradient(rgba(44, 49, 56, 0.15) 0%, rgba(44, 49, 56, 0.7) 25%, rgba(44, 49, 56, 0.9) 50%, rgba(44, 49, 56, 0.95) 100%);
+       background: linear-gradient(rgba(44, 49, 56, 0) 0%, rgba(44, 49, 56, 0.35) 25%, rgba(44, 49, 56, 0.6) 50%, rgba(44, 49, 56, 1) 100%);
+       z-index: 10;
+    }
+
+    video{
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
     }
 
     .but-title_first, .but-title_second, .but-text{
@@ -440,7 +442,7 @@ h3, p {
     }
 
      .intro-screen {
-        height: 80vh;
+        height: 95vh;
     }
 
     .logo-main-title{
@@ -457,7 +459,8 @@ h3, p {
     }
 
     .but-container{
-        margin-top: -450px;
+        margin-top: -422px;
+        padding-bottom: 30px;
     }
 
     .but-title_second{
